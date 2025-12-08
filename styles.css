@@ -54,3 +54,19 @@ footer.small{display:flex;justify-content:space-between;gap:12px;align-items:cen
 .tile.hidden {
   visibility: hidden;
 }
+
+.solve-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #114b3b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.solve-btn:hover {
+  background: #0d3d31;
+}
