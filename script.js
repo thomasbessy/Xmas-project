@@ -88,17 +88,10 @@ function updateFinal() {
   const allSolved = solved.p1 && solved.p2 && solved.p3;
   const ft = document.getElementById("final-text");
   const fc = document.getElementById("final-content");
-  const list = document.getElementById("codes-list");
-
-  list.innerHTML = "";
-  if (solved.p1) list.innerHTML += "<li>A47</li>";
-  if (solved.p2) list.innerHTML += "<li>B12</li>";
-  if (solved.p3) list.innerHTML += "<li>C9</li>";
 
   if (allSolved) {
     ft.textContent = "Bravo — tu as résolu les trois énigmes.";
     fc.classList.remove("hidden");
-    document.getElementById("phone-number").textContent = FINAL_PHONE;
   } else {
     ft.textContent = "Tu dois d'abord résoudre les 3 énigmes.";
     fc.classList.add("hidden");
