@@ -70,3 +70,16 @@ footer.small{display:flex;justify-content:space-between;gap:12px;align-items:cen
 .solve-btn:hover {
   background: #0d3d31;
 }
+.shuffle-btn {
+  padding: 8px 14px;
+  border: none;
+  background: #444;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.shuffle-btn:hover {
+  background: #666;
+}
