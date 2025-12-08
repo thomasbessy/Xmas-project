@@ -1,5 +1,4 @@
 // --- Configuration principale ---
-const FINAL_PHONE = "+33 6 12 34 56 78";
 const CORRECT = { p1: "JEAN CHRISTOPHE", p2: true, p3: "9" };
 let solved = { p1: false, p2: false, p3: false };
 let hintsLeft = 3;
