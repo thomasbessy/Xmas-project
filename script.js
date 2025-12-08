@@ -81,7 +81,8 @@ function giveHint(target) {
 
   alert(hints[target]);
   if (target === "p2") {
-    document.getElementById("solve-button").style.display = "inline-block";
+    const btn = document.getElementById("solve-button");
+    if (btn) btn.style.display = "inline-block";
   }
 }
 
