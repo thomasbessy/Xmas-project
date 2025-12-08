@@ -182,14 +182,19 @@ function slide_tile(clickedPos) {
     [slide_state[clickedPos], slide_state[emptyIndex]] = [slide_state[emptyIndex], slide_state[clickedPos]];
     render_slider(slide_state);
     // Vérification de la résolution
-    if (slide_state.every((val, idx) => val === slide_state_solved[idx])) {
+    if (isPuzzleSolved(slide_state)) {
       document.getElementById('p2-feedback').textContent = 'Image reconstituée ! Bravo.';
       solved.p2 = true;
       updateFinal();
     }
   }
 }
-
+function isPuzzleSolved(state) {
+  for (let i = 0; i < 8; i++) {
+    if (state[i] !== i) return false;
+  }
+  return true;
+}
 // --- Appelle setup_slider au démarrage du jeu ---
 document.addEventListener('DOMContentLoaded', setup_slider);
 
